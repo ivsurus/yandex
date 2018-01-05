@@ -1,0 +1,9 @@
+.settings/
+target/
+test-output/
+src/main/
+src/test/resources/
+bin/
+*.classpath
+*.project
+*.jar
