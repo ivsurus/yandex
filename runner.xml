@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="WLN Regression test suite (default)" parallel="methods" thread-count="2"
-	verbose="2">
+<suite name="yandex testing suite" >
+	<parameter name="browser"  value="edge"/>
+	<parameter name="platform"  value="WIN10"/>
+	<parameter name="version"  value="38"/>
 	<!-- Tests -->
 	<test name="WLN Regression tests">
 		<classes>
 		<class name="test.MailBoxTest">
 			<methods>						
-				<include name="draftsFolderTest"/>
 					<include name="advanceActionsTest"/>
+				<include name="draftsFolderTest"/>
 			</methods>
 		</class>
 		</classes>
